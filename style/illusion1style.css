@@ -1,0 +1,51 @@
+#leftpane
+{
+	display: block;
+	margin-right: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 260;
+	height:	420;
+	position: relative;
+	top: -510px;
+}
+
+#rightpane
+{
+	display: block;
+	margin-left: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 260;
+	height:	420;
+	position: relative;
+	top: -930px;
+}
+
+.perk1
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 16pt;
+	margin-left: 0;
+	margin-bottom: 30;
+	padding: 2 auto;
+	width: 250;
+	height: 30;
+}
+
+.perk2
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 16pt;
+	margin-left: 10;
+	margin-bottom: 30;
+	padding: 2 auto;
+	width: 250;
+	height: 30;
+}

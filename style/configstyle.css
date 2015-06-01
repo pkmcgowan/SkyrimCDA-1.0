@@ -1,0 +1,40 @@
+#leftpane
+{
+	display: block;
+	margin-right: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 500;
+	height:	470;
+	position: relative;
+	top: -20px;
+	left: -15px;
+}
+
+#rightpane
+{
+	display: block;
+	margin-left: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 500;
+	height:	470;
+	position: relative;
+	top: -492px;
+	left: 15px;
+}
+
+.ctrlContainer
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 18pt;
+	margin-left: 10;
+	margin-bottom: 22;
+	width: 480;
+	height: 30;
+}

@@ -1,0 +1,76 @@
+#leftpane
+{
+	display: block;
+	margin-right: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 230;
+	height:	420;
+	position: relative;
+	top: -520px;
+	left: -15px;
+}
+
+#rightpane
+{
+	display: block;
+	margin-left: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 230;
+	height:	420;
+	position: relative;
+	top: -940px;
+	left: 15px;
+}
+.perk1
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 16pt;
+	margin-left: 0;
+	margin-bottom: 20;
+	padding: 2 auto;
+	width: 220;
+	height: 30;
+}
+
+.perk2
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 16pt;
+	margin-left: 0;
+	margin-bottom: 20;
+	padding: 2 auto;
+	width: 220;
+	height: 60;
+}
+
+.perk3
+{
+	background: #030708;
+	color: #808d92;
+	font-size: 16pt;
+	margin-left: 10;
+	margin-bottom: 10;
+	padding: 2 auto;
+	width: 220;
+	height: 30; 
+}
+
+.perk4
+{
+	background: #030708;
+	border-color: #030708;
+	font-size: 16pt;
+	margin-left: 10;
+	margin-bottom: 10;
+	padding: 2 auto;
+	width: 220;
+	height: 60;
+}

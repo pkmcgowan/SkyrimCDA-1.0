@@ -1,0 +1,103 @@
+#sendername
+{
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	font-size: 16pt;
+	margin: 0 auto;
+	padding: 2 auto;
+	width: 625;
+	height: 60;
+	position: relative;
+	top: -60px;
+}
+#sendername input
+{
+	width: 300;
+	float: right;
+}
+
+#emailfield
+{
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	font-size: 16pt;
+	margin: 0 auto;
+	padding: 2 auto;
+	width: 625;
+	height: 60;
+	position: relative;
+	top: -40px;
+}
+#emailfield input
+{
+	width: 300;
+	float: right;
+}
+
+#subjectfield
+{
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	font-size: 16pt;
+	margin: 0 auto;
+	padding: 2 auto;
+	width: 625;
+	height: 60;
+	position: relative;
+	top: -20px;
+}
+#subjectfield input
+{
+	width: 300;
+	float: right;
+}
+
+#commentsbox
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	font-size: 16pt;
+	padding: 2 auto;
+	width: 584;
+	height: 210;
+	position: relative;
+	top: 0px;
+}
+
+#buttons
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #030708;
+	color: #808d92;
+	border: 1px solid;
+	border-color: #030708;
+	width: 250;
+	padding: 2 auto;
+	position: relative;
+	top: -10px;
+}
+#buttons input
+{
+	display: inline;
+	background-color: #808d92;
+	color: #030708;
+	font-size: 16pt;
+}
+
+.error
+{
+	color: FF0000;
+}

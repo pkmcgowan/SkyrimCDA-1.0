@@ -1,0 +1,201 @@
+a:hover{background-color: lightgray;}
+a:active{background-color: dimgray;}
+#container
+{
+	background: #030708;
+	border: 2px solid;
+	border-color: #808d92;
+	margin: 0 auto;
+	width: 1024;
+	height: 768;
+}
+#header
+{
+	padding: 20px;
+	color: #808d92;
+	border: 2px solid;
+	border-color: #808d92;
+	height: 72px;
+}
+
+#header h1
+{
+	margin: 0;
+	position: relative;
+	top: -80px;
+	left: 80px;
+	font-size: 40px;
+	text-shadow: 2px 2px 4px #60696c;
+}
+
+#header h2
+{
+	margin: 0;
+	position: relative;
+	top: -80px;
+	left: 80px;
+	font-size: 30px;
+	text-shadow: 2px 2px 4px #60696c;
+}
+
+#navigation
+{
+	float:left;
+	width: 1020px;
+	border: 2px solid;
+	border-color: #808d92;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	padding: 5px 10px;
+}
+
+#content
+{
+	clear:left;
+	padding: 20px;
+	border: 2px solid;
+	border-color: #808d92;
+	height: 533px;
+	font-size: 16pt;
+	color: #808d92;
+}
+
+#content h3
+{
+	color: #808d92;
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	top: -10px;
+}
+
+#content h6
+{
+	color: #FF0000;
+	text-align: center;
+	position: relative;
+	top: -40px;
+}
+#centerpane h3
+{
+	color: #808d92;
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+}
+
+#resetblock
+{
+	display: block;
+	margin-right: auto;
+	border: 1px solid;
+	border-color: #030708;
+	width: 300px;
+	position: relative;
+	left: 690px;
+	top: -15px;
+}
+
+#footer
+{
+	background: #030708;
+	color: #808d92;
+	text-align: right;
+	padding: 5px;
+	height: 20px;
+	border: 2px solid;
+	border-color: #808d92;
+}
+
+#footer a
+{
+	display: block;
+	float: left;
+	color: #808d92;
+}
+
+.resetbutton
+{
+	background-color: #808d92;
+	margin-left: 20px;
+	color: #030708;
+	float: right;
+}
+
+.skillbutton
+{
+	background-color: #808d92;
+	color: #030708;
+	position: relative;
+	top: -630px;
+}
+
+.PerkTotal
+{
+	text-align: right;
+	position: relative;
+	top: -160px;
+	font-size: 14pt;
+}
+.ButtonLeft
+{
+	float: left;
+	border: 2px solid#808d92;
+	color: #808d92;
+}
+
+.ButtonRight
+{
+	float: right;
+	border: 2px solid#030708;
+	color: #030708;
+	background-color: #808d92;
+}
+
+.BlankButton
+{
+	display: block;
+	padding: 5px 10px 4px;
+	color: #030708;
+	background-color: #60696c;
+	border: 2px solid#808d92;
+	float: left;
+	font-weight: 900;
+}
+
+.ctrlscheme
+{
+	color: #808d92;
+	background-color: #030708;
+}
+.sourcetext
+{
+	font-size: 8pt;
+	text-align: center;
+	position: relative;
+	top: -40px;
+}
+.imageposition
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: -40px;
+}

@@ -1,0 +1,129 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+<link rel="stylesheet" type="text/css" href="../style/webmasterstyle.css">
+<script src="../scripts/skyrim.js" type="text/javascript" encoding="utf-8"></script>
+<script src="../scripts/jquery-2.0.3.min.js" type="text/javascript" encoding="utf-8"></script>
+</head><body onload="initFeedback()">
+
+<div id="container">
+	<div id="header">
+		<img src="../images/skyrim1.jpg" width=72 height=72>		
+		<h1>The Elder Scrolls V: Skyrim</h1>
+		<h2>Character Development Assistant</h2>		
+	</div>
+	<div id="content" style="height:574">
+		<h3>Webmaster's Feedback Page</h3>
+		<h6>* Required field</h6>
+		<form name="feedback" action="./autoreply.php" method="post" onsubmit="return validateForm()">
+		<!-- <form action="mailto:pmcgowan6198@westfield.ma.edu" enctype="text/plain" method="post" onsubmit="return validateForm()"> -->
+			<div id="sendername">
+				Name: <span id="nameerr" class="error" style="float:right;">*</span><input tabindex="1" type="text" name="usrname">
+				<br> <span id="nameerr2" class="error" style="float:right;font-size: 12pt; ">Name must begin with a capital letter and contain no numbers</span>
+			</div>
+			<div id="emailfield">
+				E-mail Address: <span class="error" style="float:right;">*<span id="emailerr" class="error" style="float:right; font-size: 12pt;">Invalid e-mail address</span></span><input tabindex="2" type="text" name="email"><br>
+				
+			</div>
+			
+			<div id="subjectfield">
+				Subject:        <span class="error" style="float:right;">*<span id="subjecterr" class="error" style="float:right; font-size: 12pt;">Invalid e-mail subject</span></span><input tabindex="3" type="text" name="subject"><br>
+				
+			</div>
+			
+			<div id="commentsbox">
+				Enter Comments Here...
+				<textarea rows="10" cols="70" tabindex="4" name="comments">Enter your comments here...</textarea>
+			</div>
+			
+			<div id="buttons">
+				<input type="submit" tabindex="5" value="Submit">
+				<input type="reset" tabindex="6" style="float:right;" value="Reset">
+			</div>
+			<input type="hidden" id="pagecode" value="W3M">
+		</form>
+	</div>
+	<div id="footer">
+		<span style="text-align:right;">Copyright © SkyrimCDA 2013</span>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+<!-- cloak the javascript from browsers that don't support it
+function initFeedback()
+{
+	$("#nameerr").hide();
+	$("#nameerr2").hide();
+	$("#emailerr").hide();
+	$("#subjecterr").hide();
+}
+//function validates the form data and reveals any error messages
+//sources: http://www.w3schools.com/js/tryit.asp?filename=tryjs_form_validate_email
+//	http://www.w3schools.com/jsref/jsref_obj_regexp.asp
+//	http://www.w3schools.com/js/js_obj_regexp.asp
+//	http://www.w3schools.com/js/js_form_validation.asp
+//	http://www.w3schools.com/jquery/default.asp
+function validateForm()
+{
+	var result = true;
+	var namePattern = new RegExp("^[A-Z][a-zA-Z]*");
+	var hasNumbers = new RegExp("[0-9]+");
+	
+	var name = document.forms["feedback"]["usrname"].value;
+	var email = document.forms["feedback"]["email"].value;
+	var subject = document.forms["feedback"]["subject"].value;
+	var comments = document.forms["feedback"]["comments"].innerHTML;
+	
+	var atpos = email.indexOf("@");
+	var dotpos = email.lastIndexOf(".");
+	//clear any previous errors
+	initFeedback();
+	
+	//check the name
+	if(name == null || name == "")
+	{
+		document.forms["feedback"]["usrname"].value = "Guest";
+	}
+	else
+	{
+		if(!namePattern.test(name) || hasNumbers.test(name))
+		{
+			result = false;
+			$("#nameerr").show();
+			$("#nameerr2").show();
+		}
+	}
+	
+	//check the e-mail address
+	if(email == null || email == "")
+	{
+		result = false;
+		$("#emailerr").show();
+	}
+	else
+	{
+		if(atpos < 1 || dotpos < (atpos + 2) || (dotpos + 2) > email.length)
+		{
+			result = false;
+			$("#emailerr").show();
+		}
+	}
+	
+	//check for non-null or non-empty subject
+	if(subject == null || subject == "")
+	{
+		result = false;
+		$("#subjecterr").show();
+	}
+	
+	//check for non-null or non-empty comments
+	if(comments == null || comments == "")
+	{
+		result = false;
+		$("#commenterr").show();
+	}
+	return result;
+}
+//decloak the javascript -->
+</script>
+</html>
